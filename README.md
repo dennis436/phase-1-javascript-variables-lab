@@ -27,7 +27,7 @@ in charge of getting the tests to pass.
 The structure of this lab — where its files and folders are located
 — looks roughly like the following:
 
-``` text
+```text
 ├── CONTRIBUTING.md
 ├── LICENSE.md
 ├── README.md
@@ -86,7 +86,7 @@ not edit this file otherwise you may have extra difficulty passing this lab.
 A few lines down in the `test/indexTest.js` file you will see:
 
 ```js
-describe('index.js', function () {
+describe("index.js", function () {
   // there's stuff in here, too
 });
 ```
@@ -99,7 +99,7 @@ the test is telling us that the tests that come afterwards will be about
 `companyName`. Then comes the word `it`, where you see the following:
 
 ```js
-it('is set as Scuber', function () {
+it("is set as Scuber", function () {
   // tests are here
 });
 ```
@@ -108,8 +108,8 @@ This is telling us that the `companyName` should be set to `Scuber`. Finally,
 filling in the missing part of the `it` code, we see:
 
 ```js
-it('is set as Scuber', function () {
-  expect(companyName).to.equal('Scuber');
+it("is set as Scuber", function () {
+  expect(companyName).to.equal("Scuber");
 });
 ```
 
@@ -127,7 +127,8 @@ gather the information that you can. We will also provide instructions in the
 ## Running the Tests
 
 Start by installing the test dependencies by running `npm install` in the
-terminal, then run `npm test` to run the tests. You should now see the current
+terminal, then run `npm test` to run the tests. You should now see the
+current
 status of the tests in the terminal. For the moment, all of the tests fail.
 Let's figure out how to get one of them passing! (The rest will be up to you.)
 
@@ -135,7 +136,7 @@ To get our first test to pass, we can open up our `index.js` file, and write the
 following:
 
 ```js
-let companyName = 'Scuber';
+let companyName = "Scuber";
 ```
 
 If you run `npm test` again, you'll see that our first test is now passing.
@@ -165,7 +166,7 @@ If you open up `test/indexTest.js`, you will see the tasks in front of you:
   this means that you need to go to your `index.js` file and declare a variable
   named `companyName` and set it equal to `Scuber`.
 - In the second `it` function call for `companyName`, it says it `is defined as
-  a const`. The next line of code tests this. So you need to make sure that you
+a const`. The next line of code tests this. So you need to make sure that you
   are using the correct type of variable declaration such that attempting to
   reassign the variable throws an error.
 - `mostProfitableNeighborhood` and `companyCeo` — Here we are getting more
